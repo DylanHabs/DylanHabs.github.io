@@ -1,0 +1,86 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.navbar {
+background-color: #6D9886;
+color: #F2E7D5;
+padding: 10px 0;
+position: sticky; /* Sticky navigation */
+top: 0;
+z-index: 1000; /* Ensures the navbar stays above other content */
+width: 100%;
+}
+
+.navbar ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+justify-content: center; /* Center the navbar items */
+}
+
+.navbar li {
+display: inline;
+}
+
+.navbar a {
+color: #F7F7F7;
+text-decoration: none;
+padding: 5px 10px;
+}
+
+.navbar a:hover {
+background-color: #555;
+border-radius: 5px;
+}
+
+html, body {
+height:100%;
+width:100%;
+margin:0;
+}
+iframe {
+width:100%;
+height:45vh;
+overflow:hidden;
+margin:0px;
+padding:0px;
+border:none;
+}
+
+body {
+background-color: #f0f0f0;
+}
+
+h1 {
+color: #336699;
+}
+
+#project_title {
+color: #F7F7F7;
+}
+
+#project_tagline {
+color: #F7F7F7;
+}
+
+#header_wrap {
+background: #212121;
+background: -moz-linear-gradient(top, #393E46, #262a31);
+background: -webkit-linear-gradient(top, #393E46, #262a31);
+background: -ms-linear-gradient(top, #393E46, #262a31);
+background: -o-linear-gradient(top, #393E46, #262a31);
+background: linear-gradient(to top, #393E46, #262a31);
+}
+
+body {
+color:#393E46;
+}
+
+h1, h2, h3, h4, h5, h6 {
+color:#393E46;
+}
