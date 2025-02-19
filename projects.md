@@ -7,7 +7,7 @@
 - Used the Steam API allowing users to create lobbies and initialize peer to peer connections
 - Implemented bots using a finite state machine to emulate the behaviour of a real player
 - Multiple weapon types such as hit scan and projectiles that use client-server architecture
-- Allows for customisations that can be purchased and stored using Steam services
+- Allows for customizations that can be purchased and stored using Steam services
 
 ## Minor Scale [2024]
 ![minorScreenshot](/assets/minorScale.jpg){: width="75%"}\

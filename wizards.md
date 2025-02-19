@@ -21,7 +21,7 @@ The game is mostly peer to peer but it does use more traditional client server a
 Things like round wins, what map should be played next and which players are kicked from the lobby—are all managed by the original host. Since the game allows anybody to host I decided p2p would be better than a full client server architecture that handles most all logic server side and then uses client side prediction.
 
 Connections can also fail for a variety of reasons so having a timeout menu that lets you reconnect is important.
-<iframe src="https://www.youtube.com/embed/wq79haHV98k?start=641&amp;end=704" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/vJpZklvWrkc?si=cnpUsHnDsElG9N3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Player Controller
 Players are made of two big components an Input handler and a Wizard. 
@@ -55,7 +55,7 @@ Raycast Weapons
 Projectile Weapons
 - Unlike raycast weapons, projectiles require you to physically collide with them on your own client. If you visually dodge a projectile, you won’t be hit.
 - Projectiles also utilize raycasts to detect collisions.
-<iframe src="https://www.youtube.com/embed/0rTI_UUfB-E?start=94&amp;end=123" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/_nDj0uVBefQ?si=WXKbmmEc5l05TcaW" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Area of effect Weapons
 - These affect any enemy player within a bounded region
@@ -82,7 +82,7 @@ The bots use a finite state machine that around every .2 seconds will reassess t
 I allow for the player to customize their staff, colors, and robe patterns using currency they find on maps or win at the end of the game.
 To make it at least a little harder to cheat unlocks I used Steam stats to store which unlocks they have and how much of the in-game currency they have.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lZJXX-j72bI?start=359&amp;end=406" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_XaminSjPr0?si=z-8L1e01NelO-61U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Concluding thoughts
 I learned so much from this project but am really happy with how it turned out!

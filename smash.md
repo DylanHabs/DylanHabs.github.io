@@ -9,7 +9,7 @@ The fighting gameplay had two steps.
 1. Determining what move was inputted
 1. Executing that move with all relevant data
 
-I created a circular input queue that will save the last .125 seconds of inputs as a buffer for understanding which move the player preformed. 
+I created a circular input queue that will save the last .125 seconds of inputs as a buffer for understanding which move the player performed. 
 This allows differentiating between an attack where the player tapped forward and left clicked vs an attack where they held forward and left clicked similar to how 2D fighting games work.
 
 ![smashIntro](/assets/smashINtro.png){: width="75%"}
