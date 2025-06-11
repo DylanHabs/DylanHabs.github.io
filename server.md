@@ -48,7 +48,7 @@ This separation helps optimize performance by using the right delivery mode for 
 ## Movement Manager
 ### Client-Side:
 The client is responsible for sending a new input every tick. These input packets are sent unreliably to reduce latency, since unreliable messages are faster and more efficient for high-frequency data.
-Since the client only send inputs to the server it makes it lot hard to cheat. This is what makes it an authoritative server. The client has no control over it's final state since it only send inputs.
+Since the client only sends inputs to the server it makes it a lot harder to cheat. This is what makes it an authoritative server. The client has no control over it's final state.
 
 Each input is tagged with a unique ID to ensure correct ordering. The client expects to eventually receive a matching state ID from the server that corresponds to the inputs it sent.
 However, since the network is unreliable and packets may be lost, the client doesn’t just send the input from the current tick. Instead, the MovementManager resends all unacknowledged inputs until they are confirmed by the server:
@@ -89,7 +89,7 @@ for (int i = 0; i < inputList.Count; i++)
     KinematicCharacterSystem.Simulate(TickConfig.CLIENT_TICK_TIME, new List<KinematicCharacterMotor>{motor}, new List<PhysicsMover>());
 }
 ```
-This correction may cause the player to appear to teleport slightly, which can feel jarring. This visual artifact is usually smoothed out later with interpolation or smoothing algorithms
+This correction may cause the player to appear to teleport slightly, which can feel jarring. This visual artifact is usually smoothed out later with interpolation or smoothing algorithms.
 ### Server Side:
 The server is responsible for reading client inputs and, once per tick, sending back an authoritative state update for each player.
 Because packets may occasionally be lost in transit, the server keeps a buffer of the last two ticks of inputs for each client.
@@ -162,8 +162,8 @@ Currently, some server-sent data is quantized to reduce bandwidth usage. For exa
 
 In the future I would like to:
 - Quantize more player state variables (e.g., velocity or rotation) to use short instead of float. The visual and gameplay impact should be negligible, while significantly reducing bandwidth per player.
-- Switch input IDs from uint to byte or short, with wraparound behavior once the maximum value is reached. This would further reduce packet sizes with minimal complexity.
+- Switch input IDs from unsigned integers to bytes or shorts, with wraparound behavior once the maximum value is reached. This would further reduce packet sizes with minimal complexity.
 
-Instead of representing inputIDs with uints I want to try using a short or byte that wraps around onces it reaches the max size.
+Instead of representing inputIDs with unsigned integers I want to try using a short or byte that wraps around onces it reaches the max size.
 
 Because both input and state packets are already extremely compact, this system is designed for scalability. I’m aiming to support 100+ concurrent players as this demo evolves into a full-featured game.
