@@ -1,4 +1,4 @@
-# Minor Scale [2024]
+# Authoristative Server [2024]
 [Steam Page](https://store.steampowered.com/app/2376030/Minor_Scale/)\
 Minor Scale is a rhythm-based tower defense game where the notes in the rhythm game control which tower fires.
 It was developed in Unreal Engine 5 by a team of over 20 members as our senior capstone project.

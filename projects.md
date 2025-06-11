@@ -1,5 +1,13 @@
 # Projects
 
+## Authoritative Multiplayer Demo [2025]
+![wizShorts1](/assets/serverThumb.png){: width="75%"}\
+[Check out a full write up on the project here!](/server)
+- Sole developer of a deterministic 3D platformer with fully authoritative multiplayer using Unity Transport
+- Implemented client-side prediction, input buffering, and server reconciliation with input replay
+- Built a custom networking stack with support for reliable/unreliable pipelines, state interpolation, and data quantization
+- Designed compact binary protocols for efficient transmission of player state and input data
+
 ## Wizards in Shorts [2025]
 ![wizShorts1](/assets/wizShorts1.jpg){: width="75%"}\
 [Check out a full write up on the project here!](/wizards)
@@ -9,7 +17,7 @@
 - Multiple weapon types such as hit scan and projectiles that use client-server architecture
 - Allows for customizations that can be purchased and stored using Steam services
 
-## Minor Scale [2024]
+## Minor Scale [2023]
 ![minorScreenshot](/assets/minorScale.jpg){: width="75%"}\
 [Check out a full write up on the project here!](/minorScale)
 - Collaborated with a team of 20+ to create a rhythm-based tower defense game in Unreal 5
