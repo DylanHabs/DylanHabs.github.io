@@ -1,4 +1,5 @@
 # Authoritative Multiplayer Demo [2025]
+[Github page](https://github.com/DylanHabs/TheEndGame)\
 This project is a fully authoritative and deterministic 3D platformer built using Unity's low-level networking library, Unity Transport.
 ![server1](/assets/serverHeader.png){: width="100%"}\
 It implements many foundational multiplayer features, including:

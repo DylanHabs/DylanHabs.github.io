@@ -3,11 +3,12 @@ layout: default
 title: Home
 ---
 # Demo Reel
-<iframe src="https://www.youtube.com/embed/M1MQTERf3P8?si=URQz_caeuclqIpaX" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/LA770a9whzc?si=qs6yDXtMz0jhyr1I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 I graduated from the University of Utah with a BS in Computer Science
 with an emphasis in game development. I have two years experience as a
 Software Engineer developing simulation tools used by all branches of
 the military.
+I am passionate about game development and have published two games to Steam with a third hopefully on the way!
 
 ## Featured Project- Wizards in Shorts [2025]
 ![wizShorts1](/assets/render1.png){: width="100%"}\
